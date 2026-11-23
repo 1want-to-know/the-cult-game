@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dag2xhej8rj54"]
+
+[ext_resource type="PackedScene" uid="uid://tgcwvx1co572" path="res://scenes/option1.tscn" id="1_nw0q6"]
+[ext_resource type="PackedScene" uid="uid://c056dk87tm2ix" path="res://scenes/option2.tscn" id="2_say87"]
+
+[node name="Control" type="Control" unique_id=1966084794]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="option1" parent="." unique_id=1748434650 instance=ExtResource("1_nw0q6")]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 493.0
+offset_right = 396.0
+offset_bottom = 606.0
+
+[node name="option2" parent="." unique_id=1334369163 instance=ExtResource("2_say87")]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 489.0
+offset_right = 1014.0
+offset_bottom = 602.0

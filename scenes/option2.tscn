@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c056dk87tm2ix"]
+
+[ext_resource type="Script" uid="uid://d1iwm804v0iqr" path="res://codes/option_2.gd" id="1_i1ny7"]
+
+[node name="Button" type="Button" unique_id=1748434650]
+offset_right = 318.0
+offset_bottom = 113.0
+text = "Option2"
+script = ExtResource("1_i1ny7")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
