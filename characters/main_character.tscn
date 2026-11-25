@@ -2,8 +2,33 @@
 
 [ext_resource type="Texture2D" uid="uid://b34fe8nbgripi" path="res://images/char1.png" id="1_yh2br"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_yh2br"]
+atlas = ExtResource("1_yh2br")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7je4q"]
+atlas = ExtResource("1_yh2br")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ewkdj"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yh2br")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7je4q")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
 [node name="main_character" type="Node2D" unique_id=1977380040]
 
-[node name="Char1" type="Sprite2D" parent="." unique_id=1312965854]
-scale = Vector2(6, 6)
-texture = ExtResource("1_yh2br")
+[node name="char1" type="AnimatedSprite2D" parent="." unique_id=328888923]
+scale = Vector2(7, 7)
+sprite_frames = SubResource("SpriteFrames_ewkdj")
+autoplay = "default"
+frame_progress = 0.6821635

@@ -4,9 +4,42 @@
 [ext_resource type="Script" uid="uid://b350i2m6cwmpl" path="res://codes/the_game.gd" id="1_i7k80"]
 [ext_resource type="PackedScene" uid="uid://dag2xhej8rj54" path="res://scenes/user_ui.tscn" id="2_v8ewd"]
 [ext_resource type="Script" uid="uid://bqjedugjjywuj" path="res://codes/chts.gd" id="4_4hf38"]
+[ext_resource type="Texture2D" uid="uid://bdylt2aew6vnl" path="res://images/cloud_basic1.png" id="5_8hem6"]
+[ext_resource type="Texture2D" uid="uid://1ewrrpoux1ic" path="res://images/cloud_basic2.png" id="6_q43lf"]
 
 [node name="the_game" type="Node2D" unique_id=2075177200]
 script = ExtResource("1_i7k80")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1794905337]
+scroll_offset = Vector2(-1272, 8)
+repeat_size = Vector2(1280, 0)
+autoscroll = Vector2(20, 0)
+
+[node name="CloudBasic1" type="Sprite2D" parent="Parallax2D" unique_id=162775808]
+position = Vector2(187, 73)
+scale = Vector2(2.58, 2.58)
+texture = ExtResource("5_8hem6")
+
+[node name="CloudBasic2" type="Sprite2D" parent="Parallax2D" unique_id=1727929172]
+position = Vector2(462, 140)
+scale = Vector2(2.89, 2.89)
+texture = ExtResource("6_q43lf")
+
+[node name="CloudBasic4" type="Sprite2D" parent="Parallax2D" unique_id=306285056]
+position = Vector2(995, 88)
+scale = Vector2(3.4714286, 3.46)
+texture = ExtResource("6_q43lf")
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1621334642]
+scroll_offset = Vector2(-1011, -19)
+repeat_size = Vector2(1280, 0)
+autoscroll = Vector2(40, 0)
+
+[node name="CloudBasic3" type="Sprite2D" parent="Parallax2D2" unique_id=716017098]
+position = Vector2(592, 59)
+rotation = -3.1415925
+scale = Vector2(1.1466169, 1.2555791)
+texture = ExtResource("5_8hem6")
 
 [node name="user_ui" parent="." unique_id=1966084794 instance=ExtResource("2_v8ewd")]
 offset_top = 1.0
