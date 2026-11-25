@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://tgcwvx1co572" path="res://scenes/option1.tscn" id="1_nw0q6"]
 [ext_resource type="PackedScene" uid="uid://c056dk87tm2ix" path="res://scenes/option2.tscn" id="2_say87"]
+[ext_resource type="AudioStream" uid="uid://btkxultvnjl7x" path="res://music/main-music3.wav" id="3_gcgur"]
 
 [node name="Control" type="Control" unique_id=1966084794]
 layout_mode = 3
@@ -24,3 +25,8 @@ offset_left = 696.0
 offset_top = 489.0
 offset_right = 1014.0
 offset_bottom = 602.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2004486968]
+stream = ExtResource("3_gcgur")
+volume_db = -25.0
+autoplay = true
