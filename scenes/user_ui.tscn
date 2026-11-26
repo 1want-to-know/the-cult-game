@@ -28,5 +28,5 @@ offset_bottom = 602.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2004486968]
 stream = ExtResource("3_gcgur")
-volume_db = -25.0
+volume_db = -15.0
 autoplay = true

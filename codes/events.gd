@@ -1,5 +1,6 @@
 extends Node
 
+var situation = 0
 
 signal start_test
 signal start_test1

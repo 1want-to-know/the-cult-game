@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dag2xhej8rj54" path="res://scenes/user_ui.tscn" id="2_v8ewd"]
 [ext_resource type="Script" uid="uid://bqjedugjjywuj" path="res://codes/chts.gd" id="4_4hf38"]
 [ext_resource type="Texture2D" uid="uid://bdylt2aew6vnl" path="res://images/cloud_basic1.png" id="5_8hem6"]
+[ext_resource type="Script" uid="uid://c2yt8jq65e4rs" path="res://codes/main_character.gd" id="6_hscpy"]
 [ext_resource type="Texture2D" uid="uid://1ewrrpoux1ic" path="res://images/cloud_basic2.png" id="6_q43lf"]
 
 [node name="the_game" type="Node2D" unique_id=2075177200]
@@ -48,6 +49,7 @@ offset_bottom = 654.0
 
 [node name="main_character" parent="." unique_id=1977380040 instance=ExtResource("1_cltob")]
 position = Vector2(215, 314)
+script = ExtResource("6_hscpy")
 
 [node name="Button" type="Button" parent="." unique_id=169157536]
 offset_left = 631.0
