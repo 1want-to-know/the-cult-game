@@ -50,7 +50,7 @@ animations = [{
 script = ExtResource("1_npico")
 
 [node name="char1" type="AnimatedSprite2D" parent="." unique_id=328888923]
-scale = Vector2(7, 7)
+scale = Vector2(10, 10)
 sprite_frames = SubResource("SpriteFrames_ewkdj")
 autoplay = "default"
 frame_progress = 0.65034777
