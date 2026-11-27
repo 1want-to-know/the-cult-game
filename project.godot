@@ -17,7 +17,8 @@ config/icon="res://images/icon.svg"
 
 [autoload]
 
-Events="*uid://b0yvjn0onjjbi"
+ev="*uid://b0yvjn0onjjbi"
+FriendChar1="*uid://d4f1u3xabf7bj"
 
 [display]
 

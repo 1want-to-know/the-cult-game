@@ -1,21 +1,24 @@
 extends Node2D
 
 func _ready() -> void:
-	Events.start_test.connect(_testi)
-	Events.start_test1.connect(_testi1)
-	Events.change_the_situation.connect(_use_var)
+	ev.option_1.connect(_option_1)
+	ev.option_2.connect(_option_2)
+	ev.change_the_situation.connect(_use_var)
 
-func _testi():
-	match Events.situation:
+func _option_1():
+	match ev.situation:
 		0:
-			print("gotowe")
+			if FriendChar1.stats.friend == true:
+				print("gotowe")
+			else:
+				print("nie gotowe, szmato")
 		1:
 			print('ty kurwo :/')
 		2:
 			print('no dobra, dość!')
 
-func _testi1():
-	match Events.situation:
+func _option_2():
+	match ev.situation:
 		0:
 			print("gotowe1")
 		1:
@@ -25,5 +28,5 @@ func _testi1():
 	
 
 func _use_var():
-	Events.situation += 1
-	print(Events.situation)
+	ev.situation += 1
+	print(ev.situation)

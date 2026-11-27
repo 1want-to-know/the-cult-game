@@ -1,19 +1,19 @@
-extends Node2D
+extends CharacterBody2D
 
 @onready var char1s = get_node("char1")
 
 func _ready() -> void:
-	Events.start_test.connect(_testi)
-	Events.start_test1.connect(_testi1)
+	ev.option_1.connect(_option_1)
+	ev.option_2.connect(_option_2)
 
 
-func _testi():
-	match Events.situation:
+func _option_1():
+	match ev.situation:
 		0:
 			char1s.animation = "default_costume"
 
-func _testi1():
-	match Events.situation:
+func _option_2():
+	match ev.situation:
 		0:
 			char1s.animation = "default"
 

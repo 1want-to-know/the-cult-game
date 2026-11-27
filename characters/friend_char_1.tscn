@@ -1,6 +1,14 @@
 [gd_scene format=3 uid="uid://d4f1u3xabf7bj"]
 
+[ext_resource type="Script" uid="uid://dxopythl1u6xa" path="res://codes/friend_char_1.gd" id="1_gaab0"]
 [ext_resource type="Texture2D" uid="uid://dm4airhrklx5o" path="res://images/char2.png" id="1_th0id"]
+[ext_resource type="Script" uid="uid://c4r7t821477xu" path="res://codes/char_stats.gd" id="2_85i3f"]
+
+[sub_resource type="Resource" id="Resource_85i3f"]
+resource_local_to_scene = true
+script = ExtResource("2_85i3f")
+friend = true
+metadata/_custom_type_script = "uid://c4r7t821477xu"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gaab0"]
 atlas = ExtResource("1_th0id")
@@ -25,7 +33,9 @@ animations = [{
 "speed": 2.0
 }]
 
-[node name="friend_char1" type="Node2D" unique_id=179818457]
+[node name="friend_char1" type="CharacterBody2D" unique_id=982802066]
+script = ExtResource("1_gaab0")
+stats = SubResource("Resource_85i3f")
 
 [node name="char1" type="AnimatedSprite2D" parent="." unique_id=123125685]
 scale = Vector2(10, 10)

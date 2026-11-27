@@ -46,7 +46,7 @@ animations = [{
 "speed": 2.0
 }]
 
-[node name="main_character" type="Node2D" unique_id=1977380040]
+[node name="main_character" type="CharacterBody2D" unique_id=740560369]
 script = ExtResource("1_npico")
 
 [node name="char1" type="AnimatedSprite2D" parent="." unique_id=328888923]

@@ -13,8 +13,8 @@
 script = ExtResource("1_i7k80")
 
 [node name="BackgroundOutdoor1" type="Sprite2D" parent="." unique_id=333888100]
-position = Vector2(579.5, 332)
-scale = Vector2(8.264286, 6.5399995)
+position = Vector2(579.00006, 328.99994)
+scale = Vector2(8.271429, 6.6)
 texture = ExtResource("2_hscpy")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1794905337]
@@ -66,5 +66,6 @@ script = ExtResource("4_4hf38")
 
 [node name="friend_char1" parent="." unique_id=179818457 instance=ExtResource("8_cxvok")]
 position = Vector2(895, 299)
+stats = null
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
